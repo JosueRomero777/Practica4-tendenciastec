@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <style>
+    .box { fill:#f2f9ff; stroke:#2b7cff; stroke-width:2; rx:12; }
+    .cloud { fill:#fff7e6; stroke:#ffb84d; stroke-width:2; }
+    .label { font-family:Arial, Helvetica, sans-serif; font-size:16px; fill:#222; }
+    .title { font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; }
+  </style>
+
+  <rect x="24" y="40" width="240" height="120" class="box" />
+  <text x="144" y="75" text-anchor="middle" class="title">mysql_practica</text>
+  <text x="144" y="100" text-anchor="middle" class="label">MySQL 8.0</text>
+
+  <rect x="536" y="40" width="240" height="120" class="box" />
+  <text x="656" y="75" text-anchor="middle" class="title">phpmyadmin_practica</text>
+  <text x="656" y="100" text-anchor="middle" class="label">phpMyAdmin</text>
+
+  <g transform="translate(260,80)">
+    <ellipse cx="160" cy="40" rx="120" ry="40" class="cloud" />
+    <text x="160" y="46" text-anchor="middle" class="label">red_practica (network)</text>
+  </g>
+
+  <!-- Lines connecting boxes to cloud -->
+  <line x1="264" y1="100" x2="400" y2="100" stroke="#2b7cff" stroke-width="2" stroke-dasharray="4 3" />
+  <line x1="520" y1="100" x2="400" y2="100" stroke="#2b7cff" stroke-width="2" stroke-dasharray="4 3" />
+
+  <text x="400" y="20" text-anchor="middle" class="label">Diagrama de contenedores y red</text>
+</svg>

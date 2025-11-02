@@ -22,9 +22,9 @@ En la parte práctica se crean dos contenedores:
 - `mysql_practica`: imagen oficial `mysql:8.0`, con variable `MYSQL_ROOT_PASSWORD`.
 - `phpmyadmin_practica`: imagen oficial `phpmyadmin`, configurada para conectar a `mysql_practica`. 
 
-Figura 1-1. Diagrama de contenedores y red (colocar imagen en `screenshots/fig1-diagrama.png`).
+Figura 1-1. Diagrama de contenedores y red (generado: `screenshots/fig1-diagrama.svg`).
 
-<img src="screenshots/fig1-diagrama.png" alt="Diagrama de contenedores" width="800px" />
+<img src="screenshots/fig1-diagrama.svg" alt="Diagrama de contenedores" width="800px" />
 
 ### 4. Conocimientos previos
 Para realizar esta práctica se necesita entender:
@@ -110,7 +110,7 @@ docker network rm red_practica
 - phpMyAdmin accesible en `http://localhost:8080`.
 - Capacidad para iniciar sesión con `root` y `rootpass` y crear la base de datos `practica_db` desde la interfaz.
 - Capturas de pantalla de cada paso guardadas en la carpeta `screenshots/`:
-		- `screenshots/fig1-diagrama.png` — Diagrama de contenedores
+		- `screenshots/fig1-diagrama.svg` — Diagrama de contenedores (generado)
 		- `screenshots/comandos_ejecutados.png` — Resultado de comandos ejecutados / creación de red (attachment)
 		- `screenshots/contenedores.png` — Salida de `docker ps` mostrando MySQL y phpMyAdmin (attachment)
 		- `screenshots/bd_manual.png` — Vista de phpMyAdmin con la base de datos y tabla creadas (attachment)
